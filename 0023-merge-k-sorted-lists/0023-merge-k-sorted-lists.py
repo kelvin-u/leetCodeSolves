@@ -5,7 +5,7 @@
 #         self.next = next
 class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
-        # list is null or len of lists is empty
+        # list is null or len of lists is empty 
         if not lists or len(lists) == 0:
             return None 
         
@@ -20,7 +20,7 @@ class Solution:
             lists = mergedLists
         return lists[0]
         
-    def mergeList(self, l1, l2):
+    def mergeList(self, l1, l2): #lc 21
         # merge list yeah basically leetcode 21 sort two sorted lists
         dummy = ListNode()
         tail = dummy
