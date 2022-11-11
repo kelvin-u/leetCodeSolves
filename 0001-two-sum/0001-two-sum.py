@@ -1,5 +1,6 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # empty hashamp to store pairs
         
         Map = {}
         
@@ -8,5 +9,7 @@ class Solution:
             
             if complement in Map:
                 return[Map[complement], i]
+            # add to map
             Map[val] = i
+            
         return
