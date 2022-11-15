@@ -4,19 +4,19 @@ class Solution:
         Do not return anything, modify matrix in-place instead.
         """
         
-        # rotate 90 deg's is basically transposing the matrix then reversing the rows
-    
+        # tranpose the matrix then reverse the rows
         
-        # transpose matrix
-        for row in range(len(matrix)):
-            for col in range(row, len(matrix)):
-                temp = matrix[row][col]
-                matrix[row][col] = matrix[col][row]
-                matrix[col][row] = temp
+        # tranpose matrix
+        for i in range(len(matrix)):
+            for j in range(i, len(matrix)):
+                temp = matrix[i][j]
+                matrix[i][j] = matrix[j][i]
+                matrix[j][i] = temp
         
-        # reverse matrix
-        for row in matrix:
-            row.reverse()
+        #reverse matrix 
+        for i in matrix:
+            i.reverse()
+            
             
             
         
