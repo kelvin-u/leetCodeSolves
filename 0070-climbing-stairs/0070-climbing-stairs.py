@@ -3,8 +3,9 @@ class Solution:
         one, two = 1,1
         
         for i in range(n-1):
-            temp = one
-            one = one + two
-            two = temp
+            temp = one #
+            one = one + two # the new one is basically the old (one + two)
+            two = temp # two is now shifted to the one position
         return one
+            
             
