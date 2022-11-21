@@ -9,7 +9,5 @@ class Solution:
             
             if complement in Map:
                 return[Map[complement], i]
-            # add to map
-            Map[val] = i
-            
+            Map[val] = i 
         return
